@@ -16,15 +16,15 @@ function beginTest() {
     testrunning = true;
     clickLimit = Math.round(parseInt(document.getElementById('clickNum').value));
 	timeLimit = Math.round(parseInt(document.getElementById('clickTime').value));
-	if (timeLimit < 2)
+	if (timeLimit < 1)
 	{
-		alert("Please enter a value larger than 2");
+		alert("Please enter a value larger than 0");
 		testrunning = false;
 		return false;
 	}
-    if (clickLimit < 3)
+    if (clickLimit < 1)
     {
-        alert("Please enter a value larger than 3");
+        alert("Please enter a value larger than 0");
         testrunning = false;
         return false;
     }
